@@ -1,0 +1,30 @@
+@relation Preprocess_fin
+
+@attribute gender {Female,Male}
+@attribute age numeric
+@attribute DEPARTMENT {business-com,art-math,Fine-Arts,science-math,art-language}
+@attribute 'POINT GENERAL MATHEMATICS' {medium,high,low}
+@attribute 'POINT INTRODUCTION TO INFORMATION' {medium,high,low}
+@attribute 'POINT COMPUTER PROGRAMMING' {low,medium,high}
+@attribute 'POINT COMP PROGRAMMING LAB (C++)' {high,medium,low}
+@attribute 'POINT ENGLISH I' {medium,high,low}
+@attribute 'POINT FUNDAMENTAL OF ELECTRONICS' {high,medium,low}
+@attribute 'POINT DISCRETE MATHEMATICS AND APP' {medium,high,low}
+@attribute 'POINT OBJECT-ORIENTED PROGRAMMING' {medium,high,low}
+@attribute 'POINT OBJECT-ORIENTED PROGRAMMING LAB (JAVA)' {high,medium,low}
+@attribute 'POINT FUNDAMENTAL OF DIGITAL' {high,medium,low}
+@attribute 'POINT DATA STRUCTURE AND ALGORITHM' {medium,low,high}
+@attribute 'POINT ENGLISH II' {medium,low,high}
+@attribute GPA numeric
+@attribute MAJOR {Network,Information-Science,Multimedia,Business}
+
+@data
+
+Female,21,business-com,medium,medium,low,high,medium,high,medium,medium,high,high,medium,medium,1.98,Network
+Male,22,art-math,medium,high,medium,medium,medium,medium,medium,medium,medium,high,medium,medium,3,Information-Science
+Male,21,Fine-Arts,medium,medium,high,high,high,high,high,high,high,high,medium,medium,3.7,Information-Science
+Female,21,art-math,medium,medium,low,medium,low,medium,medium,low,low,medium,low,low,2.13,Multimedia
+Male,21,art-math,medium,high,low,low,medium,medium,medium,high,low,medium,medium,medium,2.75,Business
+Female,21,science-math,high,high,medium,low,medium,medium,medium,low,low,medium,low,medium,2.45,Business
+Female,20,art-language,medium,high,low,medium,medium,low,medium,low,medium,low,low,medium,2.09,Information-Science
+Male,21,art-math,low,medium,low,medium,medium,low,low,medium,medium,high,high,high,2.2,Multimedia

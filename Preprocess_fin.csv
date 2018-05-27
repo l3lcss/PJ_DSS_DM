@@ -1,0 +1,10 @@
+gender,age,DEPARTMENT,"POINT GENERAL MATHEMATICS","POINT INTRODUCTION TO INFORMATION","POINT COMPUTER PROGRAMMING","POINT COMP PROGRAMMING LAB (C++)","POINT ENGLISH I","POINT FUNDAMENTAL OF ELECTRONICS","POINT DISCRETE MATHEMATICS AND APP","POINT OBJECT-ORIENTED PROGRAMMING","POINT OBJECT-ORIENTED PROGRAMMING LAB (JAVA)","POINT FUNDAMENTAL OF DIGITAL","POINT DATA STRUCTURE AND ALGORITHM","POINT ENGLISH II",GPA,MAJOR
+Female,21,business-com,medium,medium,low,high,medium,high,medium,medium,high,high,medium,medium,1.98,Network
+Male,22,art-math,medium,high,medium,medium,medium,medium,medium,medium,medium,high,medium,medium,3,Information-Science
+Male,21,Fine-Arts,medium,medium,high,high,high,high,high,high,high,high,medium,medium,3.7,Information-Science
+Female,21,art-math,medium,medium,low,medium,low,medium,medium,low,low,medium,low,low,2.13,Multimedia
+Male,21,art-math,medium,high,low,low,medium,medium,medium,high,low,medium,medium,medium,2.75,Business
+Female,21,science-math,high,high,medium,low,medium,medium,medium,low,low,medium,low,medium,2.45,Business
+Female,20,art-language,medium,high,low,medium,medium,low,medium,low,medium,low,low,medium,2.09,Information-Science
+Male,21,art-math,low,medium,low,medium,medium,low,low,medium,medium,high,high,high,2.2,Multimedia
+Male,10,business-com,low,low,low,low,low,low,low,low,low,low,low,low,,?
