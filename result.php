@@ -2,11 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" href="css/style_result_text.css">
+    <script  src="js/JS_result_text.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<link rel="stylesheet" href="css/style_predicted.css">
+
 </head>
 <body>
     <?php
@@ -43,7 +45,8 @@
              'Male,21,art-math,medium,high,low,low,medium,medium,medium,high,low,medium,medium,medium,2.75,Business',
              'Female,21,science-math,high,high,medium,low,medium,medium,medium,low,low,medium,low,medium,2.45,Business',
              'Female,20,art-language,medium,high,low,medium,medium,low,medium,low,medium,low,low,medium,2.09,Information-Science',
-             'Male,21,art-math,low,medium,low,medium,medium,low,low,medium,medium,high,high,high,2.2,Multimedia');
+             'Male,21,art-math,low,medium,low,medium,medium,low,low,medium,medium,high,high,high,2.2,Multimedia',
+             'Male,21,art-math,medium,low,low,low,medium,low,low,low,low,low,low,medium,2.06,Multimedia');
     
     
             $input = $gender . "," . $age . "," . $department;
@@ -53,9 +56,9 @@
             $input .= "," . $gpa . ",?";
             array_push($data,$input);
 
-            for ($i=0; $i < 10 ; $i++) { 
-                echo $data[$i] . "<br>";
-            }
+            // for ($i=0; $i < 11 ; $i++) { 
+            //     echo $data[$i] . "<br>";
+            // }
             $fp = fopen('Preprocess_fin.csv', 'w');
                 foreach($data as $line){
                     $val = explode(",",$line);
@@ -71,10 +74,73 @@
              exec($cmd1,$output1);
             
 
-             echo "<br><br><hr>" . $output1[13];
+            //   echo "<br><br><hr>" . $output1[14];
 
           }
         
     ?>
+    <video autoplay muted loop id="myVideo">
+      <source src="Love-Coding.mp4" type="video/mp4">
+    </video>
+
+        <div class="center">
+            <h1 id="word">
+                <span class="letter">P</span>
+                <span class="letter">R</span>
+                <span class="letter">E</span>
+                <span class="letter">D</span>
+                <span class="letter">I</span>
+                <span class="letter">C</span>
+                <span class="letter">T</span>
+                <span class="letter">I</span>
+                <span class="letter">V</span>
+                <span class="letter">E</span>
+            </h1>
+            <h1 id="word">
+                <span class="letter">E</span>
+                <span class="letter">F</span>
+                <span class="letter">F</span>
+                <span class="letter">E</span>
+                <span class="letter">C</span>
+                <span class="letter">T</span>
+            </h1>
+            <div id="test"></div>
+            
+        </div>
+
+        <div class="container">
+            <div class="animate three">
+                <?php
+                    $data = array("Information Science","Multimedia","Network","Business");
+                    if(substr($output1[14],18,1) == "2"){
+                        for ($i=0; $i < strlen($data[0]); $i++) { 
+                            if($data[0]{$i} == " ") echo "<span>&nbsp;&nbsp;</span>";
+                            else echo "<span>".$data[0]{$i}."</span>";
+                        }
+                    } 
+                    else if(substr($output1[14],18,1) == "3"){
+                        for ($i=0; $i < strlen($data[1]); $i++) {
+                            echo "<span>".$data[1]{$i}."</span>";
+                        }
+                    }
+                    else if(substr($output1[14],18,1) == " " ){
+                        for ($i=0; $i < strlen($data[2]); $i++) {
+                            echo "<span>".$data[2]{$i}."</span>";
+                        }
+                    }
+                    else{
+                        for ($i=0; $i < strlen($data[3]); $i++) {
+                            echo "<span>".$data[3]{$i}."</span>";
+                        }
+                    }
+
+                    // echo " >>> " . $output1[14];
+                ?>
+            </div>
+        </div>
+          
+        <div class="ContainerbtnBack">
+        <button onclick="window.location.href='index.php'" class="btnBack">Back</button>
+        </div>
 </body>
 </html>

@@ -22,15 +22,15 @@
     margin: 30px 0px 0px 0px;
     font-family: 'Kanit', sans-serif;
     font-size: 90px;
-    color:#000;
-    background-color: rgba(204, 204, 204, 0.3);
+    color:rgb(255, 42, 106);
+    background-color: rgba(0, 0, 0, 0.6);
     border: 0px solid #000;
     padding: 0% 30% 0% 30%;
     transition: all linear 0.3s;
   }
   #mainform input[type=submit]:hover{
-    color:#ccc;
-    background-color: rgba(0, 0, 0, 0.3);
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 42, 106,0.6);
     cursor: pointer;
   }
   #text{
@@ -77,4 +77,16 @@ input[type=number]::-webkit-outer-spin-button {
   float: left;
   margin: 0px 0px 0px 50px;
   padding: 0px 0px 0px 10px;
+}
+
+.headresult{
+  top: 0px;
+  margin-top:5%;
+  width: 100%;
+  background: rgba(255, 145, 145, 0.356);
+  position: absolute;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 100PX;
+  color: #fff;
 }
